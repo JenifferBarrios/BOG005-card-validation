@@ -1,0 +1,14 @@
+h1{
+    color: blueviolet;
+    border-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+ button{
+            color: black ;
+            border-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            font-weight: 800;
+            padding: 10x 15px;
+            border-radius: 4px;
+        }
