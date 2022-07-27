@@ -24,11 +24,12 @@ function mostrarValor () {
 
   const resultadoArray=[];
   const resultadoSuma = 0;
-  for (let i = 0; i < reversadelarreglo.length; i += 1) {
+  for (let i = 0; i < reversadelarreglo.length; i ++) {
     const stringconvertidoanumero = parseInt(reversadelarreglo[i]);
+    
     if (i % 2 === 0)  {
       const dobledelnumero = stringconvertidoanumero * 2;
-      if (dobledelnumero >= 10) {
+      if (dobledelnumero > 9) {
         const arraynumerodoble = String(dobledelnumero).split("")
         const sumanumerodoble = parseInt(arraynumerodoble[0]) + parseInt(arraynumerodoble[1])
         resultadoArray.push(sumanumerodoble)
@@ -41,10 +42,14 @@ function mostrarValor () {
      
     };
     console.log(resultadoArray);
+    let resultadoSuma2 = resultadoArray.reduce(function(a,b){
+     return a+b
+    },0)
+    console.log(resultadoSuma2)
     //en resultadoarray estan todos lo numeros 
   }
   
     // recorrer resultadoArray e ir sumando todos los elementos a resultadoSuma
-    resultadoSuma = resultadoArray.reduce()
+    
   // verificar si el resultadoSuma es multiplo de 10
   // retornar verdadero o falso segun la verificacion previa
