@@ -52,12 +52,15 @@ const validator = {
       // alert("Tarjeta de Credito Invalida")
     }
 
-  }
+  },
   // creo maskify
   // paso 1 - Crear funcion
-  //function maskify (input_value) {
-
-
+  maskify : function (creditCardNumber) {
+   this.maskify(creditCardNumber)
+   
+   
+  
+  }
   // paso 2- verificar con console.log
   // paso 3- crear un alert o metodo donde se verifique el maskify
   // paso 4- Aliarla con el formulario
