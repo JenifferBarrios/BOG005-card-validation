@@ -1,11 +1,11 @@
 const validator = {
 
-  isValid: function(creditCardNumber) { 
-    
-    var input_value = document.getElementById("numerotarjeta").value;
-    
-    ar= Array.from((input_value));
-    console.log (ar); 
+  isValid: function (creditCardNumber) {
+
+
+
+    let ar = Array.from((creditCardNumber));
+    console.log(ar);
     let arrayNumero = []
     /*
     for(let i=0; i<ar.length; i++ ){
@@ -13,48 +13,55 @@ const validator = {
           arrayNumero.push(elemento)
     }
     */
-    let reversadelarreglo =ar.reverse(); //Invierte los numeros
+    let reversadelarreglo = ar.reverse(); //Invierte los numeros
     console.log(ar);
-  
-    const resultadoArray=[];
+
+    const resultadoArray = [];
     const resultadoSuma = 0;
-    for (let i = 0; i < reversadelarreglo.length; i ++) {
+    for (let i = 0; i < reversadelarreglo.length; i++) {
       const stringconvertidoanumero = parseInt(reversadelarreglo[i]);
-      
-      if (i % 2 === 0)  {
+
+      if (i % 2 !== 0) {
         const dobledelnumero = stringconvertidoanumero * 2;
         if (dobledelnumero > 9) {
           const arraynumerodoble = String(dobledelnumero).split("")
           const sumanumerodoble = parseInt(arraynumerodoble[0]) + parseInt(arraynumerodoble[1])
           resultadoArray.push(sumanumerodoble)
         } else {
-          resultadoArray.push(dobledelnumero) 
+          resultadoArray.push(dobledelnumero)
         }
       } else {
         resultadoArray.push(stringconvertidoanumero);
       }
-       
-      };
-      console.log(resultadoArray);
-      
-      // sumo los valores dentro del array con el metodo reduce
-      let resultadoSuma2 = resultadoArray.reduce(function(a,b){
-       return a+b
-      },0)
-      console.log(resultadoSuma2)
-      //en resultadoarray estan todos lo numeros 
-      if (resultadoSuma2 %10  === 0 ){
-        alert ("Tarjeta de Credito Valida") 
-       }
-     else { 
-       alert ("Tarjeta de Credito Invalida") 
-     }
-     
-  
+
+    };
+    console.log(resultadoArray);
+
+    // sumo los valores dentro del array con el metodo reduce
+    let resultadoSuma2 = resultadoArray.reduce(function (a, b) {
+      return a + b
+    }, 0)
+    console.log(resultadoSuma2)
+    //en resultadoarray estan todos lo numeros 
+    if (resultadoSuma2 % 10 === 0) {
+      return true
+      // alert("Tarjeta de Credito Valida")
+    }
+    else {
+      return false
+      // alert("Tarjeta de Credito Invalida")
     }
 
+  }
+  // creo maskify
+  // paso 1 - Crear funcion
+  //function maskify (input_value) {
 
 
+  // paso 2- verificar con console.log
+  // paso 3- crear un alert o metodo donde se verifique el maskify
+  // paso 4- Aliarla con el formulario
+  //if (creditCard.length < 6) return creditCard;
 
 
 };
