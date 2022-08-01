@@ -3,16 +3,10 @@ const validator = {
   isValid: function (creditCardNumber) {
 
 
-
     let ar = Array.from((creditCardNumber));
     console.log(ar);
     let arrayNumero = []
-    /*
-    for(let i=0; i<ar.length; i++ ){
-          const elemento = parseInt(ar[i])
-          arrayNumero.push(elemento)
-    }
-    */
+    
     let reversadelarreglo = ar.reverse(); //Invierte los numeros
     console.log(ar);
 
@@ -54,18 +48,27 @@ const validator = {
 
   },
   // creo maskify
-  // paso 1 - Crear funcion
-  maskify : function (creditCardNumber) {
-   this.maskify(creditCardNumber)
-   
-   
-  
+  // paso 1 - Crear funcion para reemplazar caracteres de un texto con una mascara
+  //texto=creditCardNumber 4940190000370787
+  //mascara= #
+  //n=12 numero de caracteres a reemplazar con #
+  //resultado = ############0787
+  maskify: function (creditCardNumber) {
+  var numeroMaskify 
+  var numerosACambiar = creditCardNumber.slice(0,-4).replace(/\w/g, "#")
+  console.log(numerosACambiar)
+  var numerosFijos = creditCardNumber.slice(-4) 
+  console.log(numerosFijos)
+  numeroMaskify= numerosACambiar +  numerosFijos ;
+  console.log(numeroMaskify)
+      return numeroMaskify
+    
   }
-  // paso 2- verificar con console.log
-  // paso 3- crear un alert o metodo donde se verifique el maskify
-  // paso 4- Aliarla con el formulario
-  //if (creditCard.length < 6) return creditCard;
 
+    
+    
+
+      
 
 };
 

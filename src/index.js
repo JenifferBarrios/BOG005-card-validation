@@ -9,6 +9,10 @@ function mostrarValor() {
      } else {
           alert("Tu Tarjeta No es Válida")
      }
+    //let resultadoOculto = validator.maskify(input_value)
+    //console.log(validator.maskify(input_value.value));
+    //validator.maskify(input_value.value)
+    //input_value.value=validator.maskify(input_value.value)
 }
 
 var boton_validar = document.getElementById("botonvalidar");
