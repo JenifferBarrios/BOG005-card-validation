@@ -6,7 +6,7 @@ const validator = {
     let ar = Array.from((creditCardNumber));
     console.log(ar);
     let arrayNumero = []
-    
+
     let reversadelarreglo = ar.reverse(); //Invierte los numeros
     console.log(ar);
 
@@ -54,22 +54,11 @@ const validator = {
   //n=12 numero de caracteres a reemplazar con #
   //resultado = ############0787
   maskify: function (creditCardNumber) {
-  var numeroMaskify 
-  var numerosACambiar = creditCardNumber.slice(0,-4).replace(/\w/g, "#")
-  console.log(numerosACambiar)
-  var numerosFijos = creditCardNumber.slice(-4) 
-  console.log(numerosFijos)
-  numeroMaskify= numerosACambiar +  numerosFijos ;
-  console.log(numeroMaskify)
-      return numeroMaskify
-    
+    var numeroMaskify
+    var numerosACambiar = creditCardNumber.slice(0, -4).replace(/\w/g, "#")
+    var numerosFijos = creditCardNumber.slice(-4)
+    numeroMaskify = numerosACambiar + numerosFijos;
+    return numeroMaskify
   }
-
-    
-    
-
-      
-
-};
-
+}
 export default validator;
