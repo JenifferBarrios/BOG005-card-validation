@@ -1,6 +1,4 @@
 import validator from './validator.js';
-
-console.log(validator);
 function mostrarValor() {
      var input_value = document.getElementById("numerotarjeta").value;
      var validaciontarjeta = validator.isValid(input_value)
@@ -11,6 +9,5 @@ function mostrarValor() {
      } else {
           alert("Tu Tarjeta No es Válida")
      }
-
 }
 document.getElementById("botonvalidar").addEventListener("click", mostrarValor)

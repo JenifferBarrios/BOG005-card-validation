@@ -1,20 +1,13 @@
 const validator = {
 
   isValid: function (creditCardNumber) {
-
-
     let ar = Array.from((creditCardNumber));
-    console.log(ar);
     let arrayNumero = []
-
-    let reversadelarreglo = ar.reverse(); //Invierte los numeros
-    console.log(ar);
-
+    let reversadelarreglo = ar.reverse();
     const resultadoArray = [];
     const resultadoSuma = 0;
     for (let i = 0; i < reversadelarreglo.length; i++) {
       const stringconvertidoanumero = parseInt(reversadelarreglo[i]);
-
       if (i % 2 !== 0) {
         const dobledelnumero = stringconvertidoanumero * 2;
         if (dobledelnumero > 9) {
@@ -39,20 +32,14 @@ const validator = {
     //en resultadoarray estan todos lo numeros 
     if (resultadoSuma2 % 10 === 0) {
       return true
-      // alert("Tarjeta de Credito Valida")
+
     }
     else {
       return false
-      // alert("Tarjeta de Credito Invalida")
+
     }
 
   },
-  // creo maskify
-  // paso 1 - Crear funcion para reemplazar caracteres de un texto con una mascara
-  //texto=creditCardNumber 4940190000370787
-  //mascara= #
-  //n=12 numero de caracteres a reemplazar con #
-  //resultado = ############0787
   maskify: function (creditCardNumber) {
     var numeroMaskify
     var numerosACambiar = creditCardNumber.slice(0, -4).replace(/\w/g, "#")
