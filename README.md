@@ -1,13 +1,5 @@
-# Tarjeta de crédito válida
+# HAMACAS ARTESANALES
 
-## Índice
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
@@ -30,12 +22,12 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ### Prototipo Inicial
 
 Incialmente pensé desarrollar una página web con muchos mas productos y funcionalidades, pero luego de un feadback y teniendo en cuenta las recomendaciones, decidi enfocarme en la funcionalidad lo cual era el requerimiento principal del proyecto.
-
+![Prototipo Inicial](src/Prototipo Inicial.jpg")
 
 ### Prototipo Final
 Despues de hacer varios intentos, logré plasmar la idea final de lo que solicitaba el cliente y trabajar en base a esos requerimientos.
 En este prototipo quise dar un giro en cuanto al enfoque de la validacion de tarjeta de crédito.
-
+![prototipo final](src/prototipo final.jpg")
 
 
 ### Imagen Final del Proyecto
