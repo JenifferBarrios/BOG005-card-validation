@@ -22,7 +22,7 @@ const validator = {
       }
 
     };
-    console.log(resultadoArray);
+    
 
     // sumo los valores dentro del array con el metodo reduce
     let resultadoSuma2 = resultadoArray.reduce(function (a, b) {

@@ -22,20 +22,17 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ### Prototipo Inicial
 
 Incialmente pensé desarrollar una página web con muchos mas productos y funcionalidades, pero luego de un feadback y teniendo en cuenta las recomendaciones, decidi enfocarme en la funcionalidad lo cual era el requerimiento principal del proyecto.
-![Prototipo Inicial](src/Prototipo Inicial.jpg)
+![Alt](/PrototipoInicial.jpg)
 
 ### Prototipo Final
 Despues de hacer varios intentos, logré plasmar la idea final de lo que solicitaba el cliente y trabajar en base a esos requerimientos.
 En este prototipo quise dar un giro en cuanto al enfoque de la validacion de tarjeta de crédito.
-![prototipo final](src/prototipo final.jpg)
+![Alt](prototipofinal.jpg)
 
 
 ### Imagen Final del Proyecto
 Esta es una imagen de como el usuario puede observar la pagina web 
-![imagen final](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
-### Link para visualizacion de la página web
-![enlace pag web](https://jenifferbarrios.github.io/BOG005-card-validation/src/)
 
 
 Autor Proyecto **JenifferBarrios**
