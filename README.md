@@ -22,12 +22,12 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ### Prototipo Inicial
 
 Incialmente pensé desarrollar una página web con muchos mas productos y funcionalidades, pero luego de un feadback y teniendo en cuenta las recomendaciones, decidi enfocarme en la funcionalidad lo cual era el requerimiento principal del proyecto.
-![Alt](/PrototipoInicial.jpg)
+![Inicial](src/Img/PrototipoInicial.jpg)
 
 ### Prototipo Final
 Despues de hacer varios intentos, logré plasmar la idea final de lo que solicitaba el cliente y trabajar en base a esos requerimientos.
 En este prototipo quise dar un giro en cuanto al enfoque de la validacion de tarjeta de crédito.
-![Alt](prototipofinal.jpg)
+![Final](src/Img/prototipofinal.jpg)
 
 
 ### Imagen Final del Proyecto
